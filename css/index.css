@@ -1,0 +1,69 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+u,
+ins {
+  text-decoration: none;
+}
+
+em {
+  font-style: normal;
+}
+
+strong {
+  font-weight: normal;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.test {
+  background: #0126de;
+  width: 25rem;
+  aspect-ratio: 3/4;
+}
