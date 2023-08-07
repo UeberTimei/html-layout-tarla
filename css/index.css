@@ -444,11 +444,11 @@ html {
 .post-office .post-office-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 28px 0;
+  padding: 16px 0;
   justify-content: center;
   align-items: center;
 }
-.post-office .post-office-text {
+.post-office .post-office-wrapper .post-office-text {
   color: #fff;
   font-family: DM Sans;
   font-size: 14px;
@@ -456,14 +456,15 @@ html {
   font-weight: 400;
   line-height: 21.79px; /* 155.644% */
 }
-.post-office .post-office-input {
-  padding: 14px 15px;
+.post-office .post-office-wrapper .post-office-input {
+  padding: 14px 25px;
   border-radius: 10px;
   border: 1px solid #fff;
   background: rgba(255, 255, 255, 0.25);
   margin: 0 8px;
+  max-width: 150px;
 }
-.post-office .post-office-input::placeholder {
+.post-office .post-office-wrapper .post-office-input::placeholder {
   color: rgba(0, 0, 0, 0.35);
   font-family: "Roboto", sans-serif;
   font-size: 11px;
@@ -471,13 +472,13 @@ html {
   font-weight: 400;
   line-height: 16.105px; /* 146.405% */
 }
-.post-office .post-office-button {
+.post-office .post-office-wrapper .post-office-button {
   border-radius: 35px;
   border: 1px solid #fff;
   background: #fff;
   padding: 14px 29px;
 }
-.post-office .post-office-button .post-office-button-text {
+.post-office .post-office-wrapper .post-office-button .post-office-button-text {
   color: #000;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -485,4 +486,57 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 16.105px; /* 146.405% */
+}
+
+.header {
+  background-color: #ffc3a0;
+}
+.header .header-wrapper {
+  display: flex;
+  padding-left: 24px;
+  align-items: flex-end;
+}
+.header .header-wrapper .header-logo-pic {
+  padding: 16px 0;
+}
+.header .header-wrapper .navigators {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 16px;
+}
+.header .header-wrapper .navigators .header-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px 0;
+}
+.header .header-wrapper .navigators .header-list .header-link {
+  color: #000;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12.802px; /* 80.01% */
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header .header-wrapper .navigators .header-list .header-link:hover, .header .header-wrapper .navigators .header-list .header-link:active, .header .header-wrapper .navigators .header-list .header-link:focus {
+  color: rgb(80, 80, 80);
+}
+.header .header-wrapper .navigators .header-auth {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 7px;
+  padding-right: 23px;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.008px; /* 155.6% */
+  user-select: none;
+  cursor: pointer;
 }
