@@ -1,61 +1,4 @@
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-dl,
-dd,
-ol,
-ul,
-figure,
-hr {
-  margin: 0;
-  padding: 0;
-}
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-u,
-ins {
-  text-decoration: none;
-}
-
-em {
-  font-style: normal;
-}
-
-strong {
-  font-weight: normal;
-}
-
-blockquote {
-  margin: 0;
-  padding: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+@import "base";
 
 // colors
 $primary: #f5ede7;
@@ -67,8 +10,52 @@ $tertiary: #0126de;
   margin: 0 auto;
 }
 
-.test {
-  background: $tertiary;
-  width: 25rem;
-  aspect-ratio: 3 / 4;
+.post-office {
+  background-color: $tertiary;
+  .post-office-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 28px 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .post-office-text {
+    color: #fff;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.79px; /* 155.644% */
+  }
+  .post-office-input {
+    padding: 14px 15px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.25);
+    margin: 0 8px;
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.35);
+      font-family: "Roboto", sans-serif;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16.105px; /* 146.405% */
+    }
+  }
+  .post-office-button {
+    border-radius: 35px;
+    border: 1px solid #fff;
+    background: #fff;
+    padding: 14px 29px;
+
+    .post-office-button-text {
+      color: #000;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16.105px; /* 146.405% */
+    }
+  }
 }
