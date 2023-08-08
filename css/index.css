@@ -594,8 +594,12 @@ html {
   bottom: 0;
   right: 0;
   padding: 25px 17px;
-}
-.welcome .welcome-wrapper .welcome-img .welcome-nav .welcome-nav {
+  gap: 5px;
   display: flex;
-  flex-direction: row;
+}
+.welcome .welcome-wrapper .welcome-img .welcome-nav .left-arrow {
+  cursor: pointer;
+}
+.welcome .welcome-wrapper .welcome-img .welcome-nav .right-arrow {
+  cursor: pointer;
 }

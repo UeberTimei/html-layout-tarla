@@ -169,11 +169,18 @@ $tertiary: #0126de;
         bottom: 0;
         right: 0;
         padding: 25px 17px;
-        .welcome-nav {
-          display: flex;
-          flex-direction: row;
+        gap: 5px;
+        display: flex;
+        .left-arrow {
+          cursor: pointer;
+        }
+        .right-arrow {
+          cursor: pointer;
         }
       }
     }
   }
+}
+
+.steps {
 }
