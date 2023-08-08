@@ -489,7 +489,7 @@ html {
 }
 
 .header {
-  background-color: #ffc3a0;
+  background-color: #f5ede7;
 }
 .header .header-wrapper {
   display: flex;
@@ -539,4 +539,63 @@ html {
   line-height: 28.008px; /* 155.6% */
   user-select: none;
   cursor: pointer;
+}
+
+.welcome {
+  background-color: #ffc3a0;
+}
+.welcome .welcome-wrapper {
+  display: flex;
+  padding: 24px 15px;
+}
+.welcome .welcome-wrapper .welcome-desc {
+  margin-right: 67px;
+}
+.welcome .welcome-wrapper .welcome-desc .welcome-title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 76px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px; /* 118.421% */
+  margin-top: 82px;
+  margin-bottom: 33px;
+  max-width: 364px;
+}
+.welcome .welcome-wrapper .welcome-desc .welcome-p {
+  color: #000;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.008px;
+  margin-bottom: 21px;
+}
+.welcome .welcome-wrapper .welcome-desc .welcome-button {
+  background-color: transparent;
+  border-radius: 35px;
+  border: 1px solid #000;
+  padding: 11px 73px;
+}
+.welcome .welcome-wrapper .welcome-desc .welcome-button .welcome-button-text {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34.002px;
+}
+.welcome .welcome-wrapper .welcome-img {
+  position: relative;
+}
+.welcome .welcome-wrapper .welcome-img .welcome-nav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 25px 17px;
+}
+.welcome .welcome-wrapper .welcome-img .welcome-nav .welcome-nav {
+  display: flex;
+  flex-direction: row;
 }

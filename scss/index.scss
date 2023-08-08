@@ -62,7 +62,7 @@ $tertiary: #0126de;
 }
 
 .header {
-  background-color: $secondary;
+  background-color: $primary;
   .header-wrapper {
     display: flex;
     padding-left: 24px;
@@ -114,6 +114,65 @@ $tertiary: #0126de;
 
         user-select: none;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+.welcome {
+  background-color: $secondary;
+  .welcome-wrapper {
+    display: flex;
+    padding: 24px 15px;
+    .welcome-desc {
+      margin-right: 67px;
+      .welcome-title {
+        color: #000;
+        font-family: Roboto;
+        font-size: 76px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 90px; /* 118.421% */
+        margin-top: 82px;
+        margin-bottom: 33px;
+        max-width: 364px;
+      }
+      .welcome-p {
+        color: #000;
+        font-family: DM Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28.008px;
+        margin-bottom: 21px;
+      }
+      .welcome-button {
+        background-color: transparent;
+        border-radius: 35px;
+        border: 1px solid #000;
+        padding: 11px 73px;
+        .welcome-button-text {
+          color: #000;
+          text-align: center;
+          font-family: Roboto;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 34.002px;
+        }
+      }
+    }
+    .welcome-img {
+      position: relative;
+      .welcome-nav {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 25px 17px;
+        .welcome-nav {
+          display: flex;
+          flex-direction: row;
+        }
       }
     }
   }
