@@ -4,6 +4,24 @@
 $primary: #f5ede7;
 $secondary: #ffc3a0;
 $tertiary: #0126de;
+$quaternary: #000;
+
+// mixins
+@mixin button-kits($bordercol) {
+  width: 310px;
+  height: 58px;
+  border-radius: 35px;
+  border: 1px solid $bordercol;
+}
+@mixin button-kits-text($col) {
+  color: $col;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34.002px; /* 154.553% */
+}
 
 .wrapper {
   max-width: 1440px;
@@ -148,17 +166,9 @@ $tertiary: #0126de;
       }
       .welcome-button {
         background-color: transparent;
-        border-radius: 35px;
-        border: 1px solid #000;
-        padding: 11px 73px;
+        @include button-kits($quaternary);
         .welcome-button-text {
-          color: #000;
-          text-align: center;
-          font-family: Roboto;
-          font-size: 22px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 34.002px;
+          @include button-kits-text($quaternary);
         }
       }
     }
@@ -238,18 +248,42 @@ $tertiary: #0126de;
       }
     }
     .steps-button {
-      width: 310px;
-      height: 58px;
-      border-radius: 35px;
-      border: 1px solid $tertiary;
+      @include button-kits($tertiary);
       .steps-button-text {
-        color: $tertiary;
-        text-align: center;
+        @include button-kits-text($tertiary);
+      }
+    }
+  }
+}
+
+.description {
+  background-color: $primary;
+  .desc-wrapper {
+    padding: 72px 0;
+    display: flex;
+    gap: 48px;
+    .desc-img {
+      margin-left: 16px;
+    }
+    .desc-desc {
+      display: flex;
+      flex-direction: column;
+      padding: 111px 0;
+      gap: 23px;
+      .desc-text {
+        color: #000;
         font-family: Roboto;
-        font-size: 22px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 400;
-        line-height: 34.002px; /* 154.553% */
+        line-height: 56.023px; /* 140.057% */
+        max-width: 649px;
+      }
+      .desc-button {
+        @include button-kits($tertiary);
+        .desc-button-text {
+          @include button-kits-text($tertiary);
+        }
       }
     }
   }
