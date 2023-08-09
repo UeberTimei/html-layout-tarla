@@ -7,11 +7,12 @@ $tertiary: #0126de;
 $quaternary: #000;
 
 // mixins
-@mixin button-kits($bordercol) {
-  width: 310px;
+@mixin button-kits($bordercol, $width) {
+  width: $width;
   height: 58px;
   border-radius: 35px;
   border: 1px solid $bordercol;
+  background-color: transparent;
 }
 @mixin button-kits-text($col) {
   color: $col;
@@ -165,8 +166,7 @@ $quaternary: #000;
         margin-bottom: 21px;
       }
       .welcome-button {
-        background-color: transparent;
-        @include button-kits($quaternary);
+        @include button-kits($quaternary, 310px);
         .welcome-button-text {
           @include button-kits-text($quaternary);
         }
@@ -248,7 +248,7 @@ $quaternary: #000;
       }
     }
     .steps-button {
-      @include button-kits($tertiary);
+      @include button-kits($tertiary, 310px);
       .steps-button-text {
         @include button-kits-text($tertiary);
       }
@@ -280,8 +280,26 @@ $quaternary: #000;
         max-width: 649px;
       }
       .desc-button {
-        @include button-kits($tertiary);
+        @include button-kits($tertiary, 310px);
         .desc-button-text {
+          @include button-kits-text($tertiary);
+        }
+      }
+    }
+  }
+}
+
+.pastry-kits {
+  background-color: $primary;
+  .kits-wrapper {
+    padding: 72px 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    .kits-card {
+      .kits-card-button {
+        @include button-kits($tertiary, 257px);
+        .kits-card-button-text {
           @include button-kits-text($tertiary);
         }
       }

@@ -572,11 +572,11 @@ html {
   margin-bottom: 21px;
 }
 .welcome .welcome-wrapper .welcome-desc .welcome-button {
-  background-color: transparent;
   width: 310px;
   height: 58px;
   border-radius: 35px;
   border: 1px solid #000;
+  background-color: transparent;
 }
 .welcome .welcome-wrapper .welcome-desc .welcome-button .welcome-button-text {
   color: #000;
@@ -667,6 +667,7 @@ html {
   height: 58px;
   border-radius: 35px;
   border: 1px solid #0126de;
+  background-color: transparent;
 }
 .steps .steps-wrapper .steps-button .steps-button-text {
   color: #0126de;
@@ -709,8 +710,35 @@ html {
   height: 58px;
   border-radius: 35px;
   border: 1px solid #0126de;
+  background-color: transparent;
 }
 .description .desc-wrapper .desc-desc .desc-button .desc-button-text {
+  color: #0126de;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34.002px; /* 154.553% */
+}
+
+.pastry-kits {
+  background-color: #f5ede7;
+}
+.pastry-kits .kits-wrapper {
+  padding: 72px 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.pastry-kits .kits-wrapper .kits-card .kits-card-button {
+  width: 257px;
+  height: 58px;
+  border-radius: 35px;
+  border: 1px solid #0126de;
+  background-color: transparent;
+}
+.pastry-kits .kits-wrapper .kits-card .kits-card-button .kits-card-button-text {
   color: #0126de;
   text-align: center;
   font-family: Roboto;
