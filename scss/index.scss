@@ -183,4 +183,74 @@ $tertiary: #0126de;
 }
 
 .steps {
+  background-color: $primary;
+  .steps-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+    .steps-title {
+      margin-top: 80px;
+      margin-bottom: 63px;
+      .steps-title-text {
+        color: #000;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 43px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60.01px; /* 139.559% */
+      }
+    }
+    .steps-each {
+      display: flex;
+      padding: 0 20px 42px;
+      gap: 33px;
+      .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .step-title {
+          color: #000;
+          text-align: center;
+          font-family: Roboto;
+          font-size: 27px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 35.996px; /* 133.32% */
+          text-transform: uppercase;
+          max-width: 207px;
+        }
+        .stepspc {
+          max-width: 100px;
+        }
+        .step-desc {
+          color: #000;
+          text-align: center;
+          font-family: DM Sans;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28.008px; /* 155.6% */
+          max-width: 326px;
+        }
+      }
+    }
+    .steps-button {
+      width: 310px;
+      height: 58px;
+      border-radius: 35px;
+      border: 1px solid $tertiary;
+      .steps-button-text {
+        color: $tertiary;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34.002px; /* 154.553% */
+      }
+    }
+  }
 }

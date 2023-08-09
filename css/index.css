@@ -603,3 +603,76 @@ html {
 .welcome .welcome-wrapper .welcome-img .welcome-nav .right-arrow {
   cursor: pointer;
 }
+
+.steps {
+  background-color: #f5ede7;
+}
+.steps .steps-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+.steps .steps-wrapper .steps-title {
+  margin-top: 80px;
+  margin-bottom: 63px;
+}
+.steps .steps-wrapper .steps-title .steps-title-text {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60.01px; /* 139.559% */
+}
+.steps .steps-wrapper .steps-each {
+  display: flex;
+  padding: 0 20px 42px;
+  gap: 33px;
+}
+.steps .steps-wrapper .steps-each .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.steps .steps-wrapper .steps-each .step .step-title {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35.996px; /* 133.32% */
+  text-transform: uppercase;
+  max-width: 207px;
+}
+.steps .steps-wrapper .steps-each .step .stepspc {
+  max-width: 100px;
+}
+.steps .steps-wrapper .steps-each .step .step-desc {
+  color: #000;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.008px; /* 155.6% */
+  max-width: 326px;
+}
+.steps .steps-wrapper .steps-button {
+  width: 310px;
+  height: 58px;
+  border-radius: 35px;
+  border: 1px solid #0126de;
+}
+.steps .steps-wrapper .steps-button .steps-button-text {
+  color: #0126de;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34.002px; /* 154.553% */
+}
