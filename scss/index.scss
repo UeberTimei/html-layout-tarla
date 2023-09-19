@@ -297,11 +297,269 @@ $quaternary: #000;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     .kits-card {
+      .kits-card-title {
+        color: #000;
+        font-family: Roboto;
+        font-size: 27px;
+        text-transform: uppercase;
+        max-width: 190px;
+        margin-top: 12px;
+      }
+      .kits-card-price {
+        font-family: DM Sans;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 9px;
+      }
+
       .kits-card-button {
         @include button-kits($tertiary, 257px);
+        margin-bottom: 24px;
         .kits-card-button-text {
           @include button-kits-text($tertiary);
         }
+      }
+    }
+  }
+}
+
+.example {
+  .example-wrapper {
+    // display: flex;
+    .example-card {
+      padding-top: 65px;
+    }
+  }
+}
+
+.pros {
+  background-color: $primary;
+  .pros-wrapper {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .pros-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 459px;
+      height: 600px;
+      border-radius: 20px;
+      border: 1px solid #000;
+      padding: 25px;
+      .pros-card-img {
+        border-radius: 10px;
+      }
+      .pros-info {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .pros-card-title {
+          color: #000;
+          text-align: center;
+          font-family: Roboto;
+          font-size: 56px;
+          max-width: 375px;
+          margin-bottom: 20px;
+        }
+        .pros-first-title {
+          max-width: 277px;
+        }
+        .pros-card-desc {
+          color: #000;
+          text-align: center;
+          font-family: DM Sans;
+          font-size: 18px;
+          line-height: 28.008px;
+        }
+      }
+    }
+  }
+}
+
+.articles {
+  background-color: $primary;
+  .articles-wrapper {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 16px 180px;
+    .articles-item {
+      .articles-item-star {
+        position: absolute;
+        z-index: 0;
+      }
+      .first-star {
+        right: 340px;
+      }
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      .second-star {
+        bottom: -5250px;
+        left: 615px;
+      }
+      .articles-item-info {
+        z-index: 10000;
+        padding: 48px 0;
+        .articles-item-title {
+          font-family: DM Sans;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24.003px; /* 150.019% */
+          text-transform: uppercase;
+        }
+        .articles-item-description {
+          margin-top: 26px;
+          margin-bottom: 22px;
+          color: #000;
+          font-family: Roboto;
+          font-size: 26px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 40.005px; /* 153.865% */
+        }
+        .articles-item-button {
+          @include button-kits(black, 256px);
+          .articles-item-button-text {
+            @include button-kits-text(black);
+          }
+        }
+      }
+    }
+  }
+}
+
+.instagram {
+  .insta-wrapper {
+    display: flex;
+    flex-direction: column;
+    .insta-title {
+      color: #000;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 43px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 60.01px; /* 139.559% */
+      margin-top: 65px;
+      margin-bottom: 15px;
+    }
+    .insta-items {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      margin-bottom: 64px;
+      gap: 24px;
+    }
+  }
+}
+
+.community {
+  background-color: $primary;
+  .community-wrapper {
+    padding: 17px 0 32px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .community-title {
+      color: #000;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 72px; /* 144% */
+      text-transform: uppercase;
+    }
+    .community-motto {
+      color: #000;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 31px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 43.992px; /* 141.91% */
+      padding: 14px 0 24px 0;
+    }
+    .community-button {
+      @include button-kits(black, 480px);
+      border-radius: 10px;
+      .community-button-text {
+        color: #000;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        @include button-kits-text(black);
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $primary;
+  .footer-wrapper {
+    padding: 65px 16px;
+    display: flex;
+    flex-direction: column;
+    .main-part {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 164px;
+      .footer-items {
+        .footer-insta {
+          color: #000;
+          font-family: Roboto;
+          font-size: 23px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 36.018px; /* 156.601% */
+        }
+        .footer-socials {
+          margin-top: 24px;
+          display: flex;
+          flex-direction: row;
+          gap: 8px;
+        }
+        .footer-item-menu {
+          .footer-item-title {
+            color: #000;
+            font-family: Roboto;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 36.018px; /* 163.72% */
+          }
+          .footer-item-menu-chooser {
+            display: flex;
+            flex-direction: column;
+            margin-top: 24px;
+
+            .footer-chooser {
+              color: #000;
+              font-family: DM Sans;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 24.003px; /* 150.019% */
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+    .copyright {
+      margin-top: 67px;
+      .copy-text {
+        color: #000;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24.003px; /* 171.449% */
       }
     }
   }
