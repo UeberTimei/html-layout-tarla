@@ -139,15 +139,15 @@ table {
   border-spacing: 0;
 }
 
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-input[type=search] {
+input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-box-sizing: content-box;
@@ -307,9 +307,9 @@ select {
  *    Known issue: inner spacing remains in IE 6.
  */
 button,
-html input[type=button],
-input[type=reset],
-input[type=submit] {
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button; /* 2 */
   cursor: pointer; /* 3 */
   *overflow: visible; /* 4 */
@@ -329,8 +329,8 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-input[type=checkbox],
-input[type=radio] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
   *height: 13px; /* 3 */
@@ -342,7 +342,7 @@ input[type=radio] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-input[type=search] {
+input[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box; /* 2 */
@@ -353,8 +353,8 @@ input[type=search] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -522,7 +522,9 @@ html {
   text-transform: uppercase;
   text-decoration: none;
 }
-.header .header-wrapper .navigators .header-list .header-link:hover, .header .header-wrapper .navigators .header-list .header-link:active, .header .header-wrapper .navigators .header-list .header-link:focus {
+.header .header-wrapper .navigators .header-list .header-link:hover,
+.header .header-wrapper .navigators .header-list .header-link:active,
+.header .header-wrapper .navigators .header-list .header-link:focus {
   color: rgb(80, 80, 80);
 }
 .header .header-wrapper .navigators .header-auth {
@@ -840,7 +842,11 @@ html {
   z-index: 10000;
   padding: 48px 0;
 }
-.articles .articles-wrapper .articles-item .articles-item-info .articles-item-title {
+.articles
+  .articles-wrapper
+  .articles-item
+  .articles-item-info
+  .articles-item-title {
   font-family: DM Sans;
   font-size: 16px;
   font-style: normal;
@@ -848,7 +854,11 @@ html {
   line-height: 24.003px; /* 150.019% */
   text-transform: uppercase;
 }
-.articles .articles-wrapper .articles-item .articles-item-info .articles-item-description {
+.articles
+  .articles-wrapper
+  .articles-item
+  .articles-item-info
+  .articles-item-description {
   margin-top: 26px;
   margin-bottom: 22px;
   color: #000;
@@ -858,14 +868,23 @@ html {
   font-weight: 400;
   line-height: 40.005px; /* 153.865% */
 }
-.articles .articles-wrapper .articles-item .articles-item-info .articles-item-button {
+.articles
+  .articles-wrapper
+  .articles-item
+  .articles-item-info
+  .articles-item-button {
   width: 256px;
   height: 58px;
   border-radius: 35px;
   border: 1px solid black;
   background-color: transparent;
 }
-.articles .articles-wrapper .articles-item .articles-item-info .articles-item-button .articles-item-button-text {
+.articles
+  .articles-wrapper
+  .articles-item
+  .articles-item-info
+  .articles-item-button
+  .articles-item-button-text {
   color: black;
   text-align: center;
   font-family: Roboto;
@@ -979,10 +998,21 @@ html {
   flex-direction: row;
   gap: 8px;
 }
-.footer .footer-wrapper .main-part .footer-items .footer-socials .footer-socials-icons .footer-socials-icons-thumb {
+.footer
+  .footer-wrapper
+  .main-part
+  .footer-items
+  .footer-socials
+  .footer-socials-icons
+  .footer-socials-icons-thumb {
   cursor: pointer;
 }
-.footer .footer-wrapper .main-part .footer-items .footer-item-menu .footer-item-title {
+.footer
+  .footer-wrapper
+  .main-part
+  .footer-items
+  .footer-item-menu
+  .footer-item-title {
   color: #000;
   font-family: Roboto;
   font-size: 22px;
@@ -990,12 +1020,23 @@ html {
   font-weight: 400;
   line-height: 36.018px; /* 163.72% */
 }
-.footer .footer-wrapper .main-part .footer-items .footer-item-menu .footer-item-menu-chooser {
+.footer
+  .footer-wrapper
+  .main-part
+  .footer-items
+  .footer-item-menu
+  .footer-item-menu-chooser {
   display: flex;
   flex-direction: column;
   margin-top: 24px;
 }
-.footer .footer-wrapper .main-part .footer-items .footer-item-menu .footer-item-menu-chooser .footer-chooser {
+.footer
+  .footer-wrapper
+  .main-part
+  .footer-items
+  .footer-item-menu
+  .footer-item-menu-chooser
+  .footer-chooser {
   color: #000;
   font-family: DM Sans;
   font-size: 16px;
@@ -1005,7 +1046,13 @@ html {
   text-transform: uppercase;
   cursor: pointer;
 }
-.footer .footer-wrapper .main-part .footer-items .footer-item-menu .footer-item-menu-chooser .footer-chooser:hover {
+.footer
+  .footer-wrapper
+  .main-part
+  .footer-items
+  .footer-item-menu
+  .footer-item-menu-chooser
+  .footer-chooser:hover {
   color: rgb(80, 80, 80);
 }
 .footer .footer-wrapper .copyright {
@@ -1062,33 +1109,41 @@ html {
     font-size: 15px;
   }
 
-  .post-office .wrapper .post-office-wrapper .post-office-button .post-office-button-text {
+  .post-office
+    .wrapper
+    .post-office-wrapper
+    .post-office-button
+    .post-office-button-text {
     font-size: 14px;
   }
 
   /* header */
-  .navigators-active {
-    transform: translateX(0);
+  .header-wrapper {
+    position: relative;
   }
+
   .header .header-wrapper .header_burger {
     display: block;
     position: absolute;
     cursor: pointer;
-    top: 195px;
+    top: 30px;
     right: 25px;
   }
-  .header .header-wrapper .navigators {
+  .header .wrapper .header-wrapper .navigators {
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #f5ede7;
-    z-index: 1000000000;
+    background-color: #000000;
+    z-index: 100000000000000000000000;
     padding: 75px;
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.2s all;
+  }
+  .header .wrapper .header-wrapper .navigators-active {
+    transform: translateX(0%);
   }
   .header .header-wrapper .navigators .header-nav {
     position: fixed;
@@ -1103,31 +1158,52 @@ html {
   .header .header-wrapper .navigators .header-nav .header-list .header-item {
     margin-bottom: 20px;
   }
-  .header .header-wrapper .navigators .header-nav .header-list .header-item .header-link {
+  .header
+    .header-wrapper
+    .navigators
+    .header-nav
+    .header-list
+    .header-item
+    .header-link {
+    color: white;
     font-size: 42px;
   }
   .header .header-wrapper .navigators .header-nav .header-nav-close {
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 80px;
+    top: 60px;
     right: -220px;
-    z-index: 10000000000001;
+    z-index: 10000000000000000000000000000000000000000000;
     cursor: pointer;
   }
-  .header .header-wrapper .navigators .header-nav .header-nav-close .header-nav-close-line {
+  .header
+    .header-wrapper
+    .navigators
+    .header-nav
+    .header-nav-close
+    .header-nav-close-line {
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #000000;
+    background-color: #ffffff;
     position: absolute;
-    top: 50%;
     border-radius: 100px;
   }
-  .header .header-wrapper .navigators .header-nav .header-nav-close .header-nav-close-line:first-child {
+  .header
+    .header-wrapper
+    .navigators
+    .header-nav
+    .header-nav-close
+    .header-nav-close-line:first-child {
     transform: translateY(-50%) rotate(45deg);
   }
-  .header .header-wrapper .navigators .header-nav .header-nav-close .header-nav-close-line:last-child {
+  .header
+    .header-wrapper
+    .navigators
+    .header-nav
+    .header-nav-close
+    .header-nav-close-line:last-child {
     transform: translateY(-50%) rotate(-45deg);
   }
   .header .header-wrapper .navigators .header-auth {
@@ -1138,18 +1214,30 @@ html {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    color: white;
+    z-index: 10000000000000000000000000000000;
   }
   .header .header-wrapper .navigators .header-auth .header-login {
     font-size: 42px;
     margin-bottom: 20px;
   }
-  .header .header-wrapper .navigators .header-auth .header-login .header-login-pic {
+  .header
+    .header-wrapper
+    .navigators
+    .header-auth
+    .header-login
+    .header-login-pic {
     display: none;
   }
   .header .header-wrapper .navigators .header-auth .header-cart {
     font-size: 42px;
   }
-  .header .header-wrapper .navigators .header-auth .header-cart .header-cart-pic {
+  .header
+    .header-wrapper
+    .navigators
+    .header-auth
+    .header-cart
+    .header-cart-pic {
     display: none;
   }
 
@@ -1160,45 +1248,44 @@ html {
     justify-content: left;
     align-items: left;
   }
-  .second-star{
+  .second-star {
     display: none;
   }
-  .first-star{
+  .first-star {
     display: none;
   }
   /* welcome */
-  .welcome-thumb{
+  .welcome-thumb {
     margin-top: 15px;
     max-width: 100%;
     height: auto;
     width: auto;
   }
-  .welcome-wrapper{
+  .welcome-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
 
   /* desc */
-  .desc-wrapper{
+  .desc-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
   }
-  .desc-thumb{
+  .desc-thumb {
     max-width: 100%;
     width: auto;
     height: auto;
     padding-left: 15px;
     padding-right: 15px;
   }
-  .description .wrapper .desc-wrapper .desc-img{
+  .description .wrapper .desc-wrapper .desc-img {
     margin-left: 0;
   }
-  .description .wrapper .desc-wrapper .desc-desc{
+  .description .wrapper .desc-wrapper .desc-desc {
     padding-top: 10px;
     display: flex;
     justify-content: center;
@@ -1238,24 +1325,25 @@ html {
     flex-direction: column;
     padding-left: 10px;
   }
-  .insta-item-thumb{
+  .insta-item-thumb {
     max-width: 100%;
     width: auto;
     height: auto;
   }
-  .instagram .wrapper .insta-wrapper .insta-items .insta-item-img:first-child, .instagram .wrapper .insta-wrapper .insta-items .insta-item-img:last-child{
+  .instagram .wrapper .insta-wrapper .insta-items .insta-item-img:first-child,
+  .instagram .wrapper .insta-wrapper .insta-items .insta-item-img:last-child {
     display: none;
   }
-  .instagram .wrapper .insta-wrapper .insta-items{
+  .instagram .wrapper .insta-wrapper .insta-items {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .steps-each{
+  .steps-each {
     display: flex;
     flex-direction: column;
   }
-  .steps .wrapper .steps-wrapper .steps-each .step .step-title{
+  .steps .wrapper .steps-wrapper .steps-each .step .step-title {
     font-size: 42px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -1264,30 +1352,30 @@ html {
   .steps .wrapper .steps-wrapper .steps-each .step .step-desc {
     font-size: 20px;
   }
-  .steps .wrapper .steps-wrapper .steps-each .step .stepspc{
+  .steps .wrapper .steps-wrapper .steps-each .step .stepspc {
     max-width: 1000px;
   }
-  .aticles-item-img{
+  .aticles-item-img {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .articles-item-thumb{
+  .articles-item-thumb {
     max-width: 100%;
     width: auto;
     height: auto;
   }
-  .kits-card-thumb{
+  .kits-card-thumb {
     max-width: 100%;
     width: auto;
     height: auto;
   }
-  .pros-card-thumb{
+  .pros-card-thumb {
     max-width: 100%;
     width: auto;
     height: auto;
   }
-  .community-button{
+  .community-button {
     max-width: 100%;
     width: auto;
     height: auto;
